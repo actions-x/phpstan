@@ -16,7 +16,7 @@ inputs:
     required: true
     default: max
     description: The phpstan level
-  directories:
+  paths:
     required: false
     description: The directories separated by space that phpstan will check. Not required since you can defined them in phpstan config
   configPath:

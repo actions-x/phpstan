@@ -24,8 +24,8 @@ else
   CONFIG=""
 fi
 
-if [ -n "$INPUT_DIRECTORIES" ]; then
-  for DIR in $INPUT_DIRECTORIES; do
+if [ -n "$INPUT_PATHS" ]; then
+  for DIR in $INPUT_PATHS; do
     $PHPSTAN analyse $CONFIG "$DIR" --level=$INPUT_LEVEL $INPUT_ARGUMENTS
   done
 else
