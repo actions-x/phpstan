@@ -1,5 +1,5 @@
 name: phpstan (PHP Static Analysis)
-description: Run phpstan on your project easily
+description: Run phpstan on your project with easy to use configuration
 branding:
   icon: check-circle
   color: green
