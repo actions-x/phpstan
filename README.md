@@ -23,9 +23,9 @@ jobs:
 
 None of the parameters are required and phpstan defaults are used.
 
-## Configuration list
+## Configuration reference
 
-All of the parameters are optional but you may need to specify them depending on your project setup
+All of the parameters are optional but you may need to specify them depending on your project setup.
 
 - `installComposer` - whether to run `composer install` before running phpstan
     - use `1` (run `composer install`) and `0` (don't run `composer install`)
