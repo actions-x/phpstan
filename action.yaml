@@ -1,0 +1,34 @@
+name: phpstan (PHP Static Analysis)
+description: Run phpstan on your project
+branding:
+  icon: check-circle
+  color: green
+inputs:
+  installComposer:
+    required: true
+    default: '1'
+    description: Whether to install composer packages, set to '0' to disable (e.g. if you installed them manually).
+  phpstanVersion:
+    required: true
+    default: none
+    description: Set the phpstan version, omit to use the latest
+  level:
+    required: true
+    default: max
+    description: The phpstan level
+  directories:
+    required: false
+    description: The directories separated by space that phpstan will check. Not required since you can defined them in phpstan config
+  configPath:
+    required: false
+    description: The path to the config file, if not specified phpstan defaults are used
+  useBundled:
+    required: true
+    description: If set to true, the local project phpstan is used instead of downloading it manually
+    default: '0'
+  arguments:
+    required: false
+    description: Any additional arguments you want to pass to the phpstan tool
+runs:
+  using: docker
+  image: Dockerfile
