@@ -36,12 +36,12 @@ All of the parameters are optional but you may need to specify them depending on
     - basically the only scenario where you need to set this to zero is if you install dependencies before running this
     action and you use non-default directory for packages (not `vendor`)
 - `phpstanVersion` - you can specify the phpstan version that will be installed for checking, any valid composer version
-is accepted, if you plan to use phpstan from your composer dependencies, check `useBundled` config below. If you don't
+is accepted, if you plan to use phpstan from your composer dependencies, see `useBundled` config below. If you don't
 specify a version the latest available is used
 - `useBundled` - if you have phpstan in your dependencies, you can set this to `1` to use it instead of downloading
 different version
 - `level` - the phpstan level, default is `max` (contrary to phpstan default level `0`)
-- `paths` - space separated paths to check, if you don't have the paths set in your config you may need to set this
+- `paths` - space separated paths to check, if you don't have the paths set in your config file you may need to set this
 config because phpstan needs paths specified either or command line or in config file
 - `configPath` - the path to the config file, if you use default config names (`phpstan.neon`, `phpstan.neon.dist`)
 you don't need to specify this, phpstan will pick them up automatically
